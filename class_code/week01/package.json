@@ -1,0 +1,16 @@
+{
+  "name": "week01",
+  "version": "1.0.0",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
