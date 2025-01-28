@@ -19,10 +19,9 @@ router.get("/greeting", (req, res) => {
 
 // add
 router.get("/add/:x/:y", (req, res) => {
-  let x = parseFloat(req.params.x);
-  let y = parseFloat(req.params.y);
-
-  res.send(`${x + y}`);
+    let { x, y } = req.params;
+    let sum = parseInt(x) + parseInt(y);
+    res.send(`The sum of ${x} and ${y} is ${sum}`);
 });
 
 // calculate
