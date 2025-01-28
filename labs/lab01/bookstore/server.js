@@ -36,8 +36,28 @@ const server = http.createServer((req, res) => {
       default:
         sendFile(res, path.join(__dirname, 'pages', 'page-not-found.html'));
     }
+  } else if (method === 'POST') {
+    // Handle POST requests
+    if (url === '/submit-form') {
+      let body = '';
+
+      // Gather the POST data
+      req.on('data', (chunk) => {
+        body += chunk.toString(); // Convert the buffer to a string
+      });
+
+      // End of data
+      req.on('end', () => {
+        console.log('Received POST data:', body);
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('Form submitted successfully!');
+      });
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end('POST route not found');
+    }
   } else {
-    // Handle other HTTP methods (like POST, etc.)
+    // Handle other HTTP methods
     res.writeHead(405, { 'Content-Type': 'text/plain' });
     res.end('Method Not Allowed');
   }
