@@ -1,8 +1,12 @@
-import React from 'react'
+import { Route, BrowserRouter as Router, Routes}
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+          <h1 class="text-3xl font-bold underline text-red-500">
+    Hello world!
+  </h1>
+    </div>
   )
 }
 
