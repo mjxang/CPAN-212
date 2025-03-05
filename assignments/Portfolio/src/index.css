@@ -63,11 +63,17 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+    @apply flex flex-col items-center justify-center gap-4;
+    position: absolute;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .neo-btn {
-    @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+    @apply px-8 py-3 text-sm font-medium text-black transition-all hover:scale-105 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] active:scale-100;
   }
 
   .cta {
@@ -170,14 +176,21 @@ body:has(.card[data-color="green"]:hover) {
   background: #2b77e7;
   position: relative;
   border-radius: 10px;
-  border: #2b77e7;
-  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
-    0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.2s ease-in-out;
 }
 
 .neo-brutalism-white {
   background: #fff;
-  border: #fff;
-  box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
-    0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+  position: relative;
+  border-radius: 10px;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.neo-brutalism-blue:hover, .neo-brutalism-white:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #000;
 }
