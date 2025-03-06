@@ -34,9 +34,13 @@ const Contact = () => {
     )
     .then(() => {
       setIsLoading(false);
-      setCurrentAnimation('idle');
-      setForm({ name: '', email: '', message: '' });
-      alert('Thank you for your message! I will get back to you soon.');
+
+
+      setTimeout(() => {     
+        setCurrentAnimation('idle');   
+        setForm({ name: '', email: '', message: '' });
+      }, 3000);
+
     })
     .catch((error) => {
       setIsLoading(false);
