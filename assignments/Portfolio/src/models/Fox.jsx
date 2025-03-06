@@ -11,6 +11,8 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 import scene from '../assets/3d/fox.glb';
 
+useGLTF.preload(scene);
+
 const Fox = ({ currentAnimation, ...props }) => {
     const group = useRef();
     const { nodes, materials, animations } = useGLTF(scene);
@@ -25,7 +27,7 @@ const Fox = ({ currentAnimation, ...props }) => {
     }, [actions, currentAnimation]);
 
     return (
-        <group ref={group} {...props}>
+        <group ref={group} {...props} dispose={null}>
             <group name="Sketchfab_Scene">
                 <primitive object={nodes.GLTF_created_0_rootJoint} />
                 <skinnedMesh
