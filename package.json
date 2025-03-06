@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "lodash": "^4.17.21",
     "react-router-dom": "^7.2.0"
   },
