@@ -18,6 +18,9 @@ import {
 import {
     shoppers,
     rexall,
+    winners,
+    hospital,
+    uniqlo,
 } from "../assets/images";
 
 export const skills = [
@@ -80,6 +83,42 @@ export const experiences = [
             "Collaborated with pharmacy team to improve workflow efficiency",
         ],
     },
+    {
+        title: "Sales Associate",
+        company_name: "Winners",
+        icon: winners,
+        date: "Sep 2018 - Dec 2019",
+        points: [
+            "Provided exceptional customer service in a fast-paced retail environment",
+            "Managed cash transactions and balanced daily registers",
+            "Organized and maintained store merchandise and displays",
+            "Assisted in inventory management and stock replenishment",
+        ],
+    },
+    {
+        title: "Sales Associate",
+        company_name: "UNIQLO",
+        icon: uniqlo,
+        date: "Jun 2017 - Aug 2018",
+        points: [
+            "Delivered personalized customer service and style recommendations",
+            "Maintained visual merchandising standards and store cleanliness",
+            "Processed sales transactions and handled customer inquiries",
+            "Participated in store inventory counts and stock organization",
+        ],
+    },
+    {
+        title: "Hospital Volunteer",
+        company_name: "North York General Hospital",
+        icon: hospital,
+        date: "Jan 2016 - Dec 2017",
+        points: [
+            "Assisted hospital staff in various departments including Emergency and Pediatrics",
+            "Provided wayfinding assistance to patients and visitors",
+            "Supported administrative tasks and patient discharge processes",
+            "Participated in hospital events and fundraising activities",
+        ],
+    },
 ];
 
 export const projects = [
@@ -88,41 +127,35 @@ export const projects = [
         theme: "btn-back-blue",
         name: "Pharmacy Management System",
         description: "Developed a web-based pharmacy management system that streamlines prescription processing, inventory tracking, and patient record management.",
-        link: "https://github.com/mjxang/pharmacy-system",
     },
     {
         iconUrl: threads,
         theme: "btn-back-green",
         name: "Healthcare Chat App",
         description: "Built a real-time chat application focused on connecting healthcare professionals and patients, featuring secure messaging and file sharing.",
-        link: "https://github.com/mjxang/healthcare-chat",
     },
     {
         iconUrl: pricewise,
         theme: "btn-back-red",
         name: "Medication Price Tracker",
         description: "Created a web app that helps users find the best prices for their medications by comparing prices across different pharmacies.",
-        link: "https://github.com/mjxang/med-price-tracker",
     },
     {
         iconUrl: snapgram,
         theme: "btn-back-pink",
         name: "Patient Portal",
         description: "Designed and implemented a patient portal where users can schedule appointments, view medical records, and communicate with healthcare providers.",
-        link: "https://github.com/mjxang/patient-portal",
     },
     {
         iconUrl: estate,
         theme: "btn-back-black",
         name: "Medical Resource Library",
         description: "Built a comprehensive digital library system for medical resources, featuring advanced search and categorization capabilities.",
-        link: "https://github.com/mjxang/med-library",
     },
     {
         iconUrl: summiz,
         theme: "btn-back-yellow",
         name: "Health Data Analytics",
         description: "Developed a data analytics platform that helps healthcare providers visualize and analyze patient health trends and outcomes.",
-        link: "https://github.com/mjxang/health-analytics",
     }
 ];
