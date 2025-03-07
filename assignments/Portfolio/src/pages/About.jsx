@@ -38,9 +38,11 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            With experience in pharmacy operations, I've worked on improving medication management and patient communication.
-            As a computer programming student, I've built applications that enhance data efficiency and user experience,
-            with a focus on healthcare technology. Here's the rundown:
+            I bring a diverse background in healthcare and retail, with strong experience in customer service and team collaboration. 
+            Starting in retail at UNIQLO and Winners, I developed essential skills in customer relations and inventory management. 
+            My volunteer work at North York General Hospital sparked my interest in healthcare, leading to my current role as a Pharmacy Assistant 
+            where I combine healthcare knowledge with technical skills. As a Computer Programming student, I'm excited to merge my healthcare 
+            experience with technology to create innovative solutions. Here's my professional journey:
           </p>
         </div>
 
