@@ -1,7 +1,7 @@
 import { projects } from "../constants";
 import { Link } from "react-router-dom"
 import { arrow } from "../assets/icons"
-import { CTA } from "../components/CTA"
+import CTA from "../components/CTA"
 
 const Projects = () => {
   return (
@@ -12,7 +12,7 @@ const Projects = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-        I haven’t done many projects, but the ones I have worked on showcase my passion for problem-solving, creativity, and building functional solutions. Whether its web development, database design, or experimenting with AI, each project has helped me grow and refine my skills. I’m always eager to learn and take on new challenges—feel free to take a look around!</p>
+        I haven't done many projects, but the ones I have worked on showcase my passion for problem-solving, creativity, and building functional solutions. Whether its web development, database design, or experimenting with AI, each project has helped me grow and refine my skills. I'm always eager to learn and take on new challenges—feel free to take a look around!</p>
       </div>
 
       <div className="flex flex-wrap my-20 gap-16">
@@ -45,23 +45,20 @@ const Projects = () => {
                                 Live Link
                         </Link>
                         <img
-                        src={arrow}
-                        alt="arrow"
-                        className="w-4 h-4 object-contain"
-                        >
-                        </img>
+                            src={arrow}
+                            alt="arrow"
+                            className="w-4 h-4 object-contain"
+                        />
                     </div>
                 </div>
             </div>
         ))}
-
-
       </div>
 
       <hr className="border-slate-200" />
 
       <CTA />
-      </section>
+    </section>
   )
 }
 
