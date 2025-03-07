@@ -10,8 +10,11 @@ const About = () => {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>A Computer Programming Student at Humber College
-          passionate about learning new programming languages and expanding my skillset.
+        <p>
+          A Computer Programming student at Humber College with a unique blend of healthcare and retail experience. 
+          I'm passionate about creating innovative solutions that bridge technology and healthcare, while continuously 
+          learning new programming languages and frameworks. Currently exploring web development, database design, 
+          and healthcare applications to make a meaningful impact in the tech industry.
         </p>
       </div>
 
