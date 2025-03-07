@@ -1,7 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { skills, experiences } from '../constants';
-import CTA from '../components/CTA';
 
 const About = () => {
   return (
@@ -23,7 +22,7 @@ const About = () => {
           {skills.map((skill) => (
             <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-back rounded-xl" />
-              <div className="btn-front rounded-excel flex justify-center items-center">
+              <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
@@ -39,7 +38,7 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-           With experience in pharmacy operations, I've worked on improving medication management and patient communication.
+            With experience in pharmacy operations, I've worked on improving medication management and patient communication.
             As a computer programming student, I've built applications that enhance data efficiency and user experience,
             with a focus on healthcare technology. Here's the rundown:
           </p>
@@ -60,8 +59,7 @@ const About = () => {
                     />
                   </div>
                 }
-                iconStyle={{ 
-                  background: <experience className="iconBg"></experience> }}
+                iconStyle={{ background: '#fff' }}
                 contentStyle={{
                   borderBottom: '8px solid #1d1836',
                   boxShadow: 'none',
@@ -93,7 +91,6 @@ const About = () => {
       </div>
 
       <hr className="border-slate-200" />
-    <CTA />
     </section>
   );
 };
