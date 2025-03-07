@@ -59,7 +59,8 @@ const About = () => {
                     />
                   </div>
                 }
-                iconStyle={{ background: '#fff' }}
+                iconStyle={{ 
+                  background: <experience className="iconBg"></experience> }}
                 contentStyle={{
                   borderBottom: '8px solid #1d1836',
                   boxShadow: 'none',
@@ -89,6 +90,8 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className="border-slate-200" />
     </section>
   );
 };
