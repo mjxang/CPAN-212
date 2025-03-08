@@ -218,3 +218,25 @@ body:has(.card[data-color="green"]:hover) {
   transform: translate(0, 0);
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
 }
+
+/* Loader */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 0.8s infinite;
+}
+
+.loader {
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
