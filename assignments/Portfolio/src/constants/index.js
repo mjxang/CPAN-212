@@ -49,11 +49,11 @@ export const skills = [
         imageUrl: threejs,
     },
     {
-        name: "Git",
+        name: "git",
         imageUrl: git,
     },
     {
-        name: "Figma",
+        name: "figma",
         imageUrl: figma,
     },
 ];
