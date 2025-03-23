@@ -5,6 +5,9 @@ const recipesRouter = require('./routes/recipes');
 const app = express();
 const PORT = 8001;
 
+require('dotenv').config();
+
+
 //Middleware to parse JSON data
 app.use(express.json());
 
